@@ -7,7 +7,7 @@ export const Login = () => {
   useEffect(() => {
     setTimeout(() => {
       setActive(false);
-    }, 17000);
+    }, 17);
   }, []);
 
   return (

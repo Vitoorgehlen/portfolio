@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Draggable from "react-draggable";
 import { Contato } from "./Contato";
+import { MeuComputador } from "./MeuComputador";
+import { Curriculo } from "./Curriculo";
+import { Programas } from "./Programas";
 import Image from "next/image";
 export const Window = ({ isActive, type, link = "", closeButton }: any) => {
   return (
@@ -43,6 +46,9 @@ export const Window = ({ isActive, type, link = "", closeButton }: any) => {
           />
         )}
         {type === "contato" && <Contato />}
+        {type === "meuComputador" && <MeuComputador />}
+        {type === "curriculo" && <Curriculo />}
+        {type === "programas" && <Programas />}
       </div>
     </Draggable>
   );
